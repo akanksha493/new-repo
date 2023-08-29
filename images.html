@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Demo</title>
+
+    <style>
+        .img-rounded-corner{
+            width: 200px;
+            border-radius: 10px;
+        }
+        /* all text properties also apply to images
+        some of the image specific properties are:
+        object-fit:cover,contain;
+        object-positon:left,right,center,top,bottom; 
+
+        with contain u use top,bottom(also center is default)
+        with cover u use left,right (also center is default)*/
+
+        .img-square{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            /* object-position:;  */
+        }
+
+        .img-circle{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <img src="images/dog-img.jpg" alt=""> -->
+
+    <img class="img-rounded-corner" src="images/dog-img.jpg" alt="">
+
+    <img class="img-square" src="images/dog-img.jpg" alt="">
+
+    <img class="img-circle" src="images/dog-img.jpg" alt="">
+
+</body>
+</html>
